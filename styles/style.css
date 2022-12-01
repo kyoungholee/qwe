@@ -1,1 +1,31 @@
-/* CSS 스타일 */
+@import url(./normalize.css);
+@import url(./reset.css);
+
+
+
+body {
+  background-color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, 
+  "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto,
+   "Noto Sans KR", "Segoe UI", "Malgun Gothic", 
+   "Apple Color Emoji", "Segoe UI Emoji", 
+   "Segoe UI Symbol", sans-serif;
+  font-weight: 120;
+
+}
+.header {
+  background-color: pink;
+}
+.vis {
+  background-color: orange;
+}
+.main {
+  background-color: lightgreen;
+}
+.slogan {
+  background-color: skyblue;
+}
+.footer {
+  background-color: gray;
+  color: coral;
+}
