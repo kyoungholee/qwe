@@ -3,6 +3,10 @@
 
 ### Node ###
 # Logs
+# Text
+
+
+
 logs
 *.log
 npm-debug.log*
@@ -148,7 +152,8 @@ dist
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
