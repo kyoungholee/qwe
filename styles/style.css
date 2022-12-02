@@ -61,9 +61,16 @@ body {
 /*메인*/
 .main {
   background-color: lightgreen;
-  height: 50vh; 
-  display: flow-root;
-  padding: 0  15px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+
+  /* display: flow-root;
+  padding: 0  15px; */
   /* overflow: hidden; */
 }
 /* .main::after {
@@ -71,16 +78,16 @@ body {
   display: block;
   clear: both;
 } */
-
+/* 
 .group {
   margin: 0 15px;
   float: left;
-}
+} */
 
 .group1{
   background-color: violet;
   width: 250px;
-  
+
 
 }
 
@@ -93,8 +100,8 @@ body {
 
 .group3{
   background-color: aqua;
+  /* flex-grow: 1; */
   width: 190px;
-
 }
 
 /*슬로건*/
