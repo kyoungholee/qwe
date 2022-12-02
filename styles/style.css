@@ -1,1 +1,114 @@
-/* CSS 스타일 */
+@import url(./normalize.css);
+@import url(./reset.css);
+
+/*
+.main::before {
+  content: "첫번째 자식 요소 입니다. ";
+  background-color: blue;
+  color: white;
+}
+.main::after {
+  content: "마지막 자식 요소 입니다. ";
+  background-color: blue;
+  color: white;
+}
+div:nth-child(1) {
+  color: red;
+  background-color: royalblue;
+}
+*/
+
+/*기본 스타일 전체 선택자!!*/
+*, *::before, *::after{
+
+  box-sizing: border-box;
+}
+
+
+
+/*본문 스타일 */
+body {
+  background-color: whitesmoke;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, 
+  "Apple SD Gothic Neo",  Roboto,
+   "Noto Sans KR", "Segoe UI", "Malgun Gothic", 
+   "Apple Color Emoji", "Segoe UI Emoji", 
+   "Segoe UI Symbol", sans-serif;
+  font-weight: 120;
+
+}
+
+/*레이아웃 (셀럭터 그룹핑)!!!!! 가독성을 이용하는 거다 !!!!! */
+.header, .vis, .main, .slogan , .footer-inner {
+
+  width: 940px;
+  margin: 0 auto; /*block 요소 가운데 정렬 */
+}
+
+/*헤더 */
+.header {
+  background-color: pink;
+  padding: 0 30px;
+  min-height: 15vh;
+}
+
+/*비주얼*/
+.vis {
+  background-color: orange;
+  height: 10vh;
+}
+
+/*메인*/
+.main {
+  background-color: lightgreen;
+  height: 50vh; 
+  display: flow-root;
+  padding: 0  15px;
+  /* overflow: hidden; */
+}
+/* .main::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+.group {
+  margin: 0 15px;
+  float: left;
+}
+
+.group1{
+  background-color: violet;
+  width: 250px;
+  
+
+}
+
+.group2{
+  background-color: gold;
+  width: 380px;
+ 
+ 
+}
+
+.group3{
+  background-color: aqua;
+  width: 190px;
+
+}
+
+/*슬로건*/
+.slogan {
+  background-color: skyblue;
+  height: 10vh;
+}
+
+/*푸터*/
+.footer {
+  background-color: gray;
+  color: coral;
+}
+.footer-inner {
+  min-height: 15vh;
+  background-color: silver;
+}
